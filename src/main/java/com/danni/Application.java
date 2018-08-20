@@ -14,6 +14,9 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
+	/**
+	 * http://localhost:8080/call?str=test
+	 */
 	@RequestMapping(value = "/call",method ={RequestMethod.POST,RequestMethod.GET})
 	public void call(String str) {
 		System.out.println(str);
